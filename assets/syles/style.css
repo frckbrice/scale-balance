@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px solid blue;
+}
+
+body {
+  width: 1440px;
+  height: 100vh;
+  font-family: sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  border: 1px solid red;
+}
+
+.container {
+  background: linear-gradient(rgba(0 0 0 / 40%), rgba(0 0 0 / 40%)),
+    url("../images/scblack.jpg");
+
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  padding-left: 1.5%;
+}
+
+#array-of-weights {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+
+
+  row-gap: 10px;
+  align-items: flex-start;
+   background: linear-gradient(rgba(0 0 0  / 60%),rgba(0 0 0  / 70%), rgba(0 0 0  / 50%),rgba(0 0 0  / 70%),rgb(156, 139, 98)) ;
+   padding: 15px 15px 30px;
+
+   width: 37.5%;
+   border-bottom-right-radius: 40px;
+   border-bottom-left-radius: 40px;
+}
+
+.div-weights-text {
+  margin: 0 2% 0 0;
+  width: 103%;
+  display: flex;
+  gap: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearanonce: textfield;
+}
+
+input.weight {
+  width: 163px;
+  height: 30px;
+  padding: 15x 20px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: rgb(136, 134, 91);
+}
+
+#rgtweight,
+#lftweight {
+  width: 162.7px;
+  padding: 5px;
+  margin-top: 5%;
+  border-radius: 4px;
+  background-color: rgb(136, 134, 91);
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.balance {
+  border-radius: 5px;
+  margin: 10% 30% 0;
+  padding: 8px 12%;
+  font-family: 'Shadows Into Light', cursive;
+  
+  font-weight: bold;
+  background-color: darkkhaki;
+  letter-spacing: 2.5px;
+  font-size: 18px;
+}
+
+#sbform {
+  width: 103%;
+}
+
+.precision {
+  margin: 10% 0 5px 0;
+  width: 100%;
+}
+
+.result {
+  margin: 40px 0 0;
+  width: 100%;
+}
+
+.precision-text {
+  background-color: darkkhaki;
+  padding: 18px 12%;
+  width: 100%;
+  border-radius: 4px;
+  color: #000;
+}
+
+
+
