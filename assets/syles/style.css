@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 body {
-  width: 1440px;
+  width: 100%;
   height: 100vh;
   font-family: sans-serif;
   font-family: 'Shadows Into Light', cursive;
@@ -28,6 +28,18 @@ body {
   padding-left: 1.5%;
 }
 
+.title {
+  font-family: 'Shadows Into Light', cursive;
+  color: #fceb0031;
+  font-size: 15rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 32%;
+  align-items: center;
+  
+}
+
 #array-of-weights {
   position: absolute;
   top: 10%;
@@ -37,12 +49,11 @@ body {
 
   row-gap: 10px;
   align-items: flex-start;
-   background: linear-gradient(rgba(0 0 0  / 60%),rgba(0 0 0  / 70%), rgba(0 0 0  / 50%),rgba(0 0 0  / 70%),rgb(156, 139, 98)) ;
    padding: 15px 15px 30px;
-
    width: 37.5%;
    border-bottom-right-radius: 40px;
    border-bottom-left-radius: 40px;
+   background-color: transparent !important;
 }
 
 .div-weights-text {
@@ -89,10 +100,9 @@ input.weight {
 
 .balance {
   border-radius: 5px;
-  margin: 10% 30% 0;
+  margin: 10% 20% 0;
   padding: 8px 12%;
   font-family: 'Shadows Into Light', cursive;
-  
   font-weight: bold;
   background-color: darkkhaki;
   letter-spacing: 2.5px;
