@@ -7,29 +7,26 @@ balance.addEventListener('click',ScaleBalancing);
 const display = ScaleBalancing();
 console.log(display);
  
-
-  //to convert the returned Node list to an array
- 
-let NodeListe = document.querySelectorAll(".weight");
-let weights = [];
-weights = Array.prototype.slice.call(NodeListe, 0);
-
-//to convert array of string to array of integer
-let newWeight = [];
-for (let i = 0; i < weights.length; i++) {
-  newWeight[i] = parseInt(weights[i].value);
-}
 // function to balance the scale having two object weights
 let result = [];
 
 function ScaleBalancing(newWeight) {
-
   // to get the two elements of the balance
   const leftWeight = parseInt(document.getElementById("lftweight").value);
 
   const rightWeight = parseInt(document.getElementById("rgtweight").value);
 
   // to get all the input elements
+   let NodeListe = document.querySelectorAll(".weight");
+  //to convert the returned Node list to an array
+  let weights = [];
+  weights = Array.prototype.slice.call(NodeListe, 0);
+
+  //to convert array of string to array of integer 
+  let newWeight = [];
+  for (let i = 0; i < weights.length; i++) {
+    newWeight[i] = parseInt(weights[i].value);
+  }
 
   console.log(leftWeight);
   console.log(rightWeight);
@@ -91,7 +88,7 @@ function ScaleBalancing(newWeight) {
 
 const resultat = document.querySelector(".resultat");
 
-const resultat1 = document.querySelector("resultat1");
+const resultat1 = document.querySelector(".resultat1");
 
 // resultat1.innerHTML = display;
 resultat.style.color = "#fff";
