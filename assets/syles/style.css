@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   font-family: sans-serif;
   font-family: 'Shadows Into Light', cursive;
   border: 1px solid red;
+  overflow: hidden;
 }
 
 .container {
@@ -28,16 +29,19 @@ body {
   padding-left: 1.5%;
 }
 
+h3 {
+  width: 60vw;
+}
+
 .title {
   font-family: 'Shadows Into Light', cursive;
   color: #fceb0031;
-  font-size: 15rem;
+  font-size: 25vh;
   font-weight: bold;
   display: flex;
   justify-content: center;
   padding-top: 32%;
   align-items: center;
-  
 }
 
 #array-of-weights {
@@ -45,15 +49,12 @@ body {
   top: 10%;
   display: flex;
   flex-direction: column;
-
-
   row-gap: 10px;
   align-items: flex-start;
    padding: 15px 15px 30px;
-   width: 37.5%;
+   width: 41%;
    border-bottom-right-radius: 40px;
    border-bottom-left-radius: 40px;
-   background-color: transparent !important;
 }
 
 .div-weights-text {
@@ -100,8 +101,8 @@ input.weight {
 
 .balance {
   border-radius: 5px;
-  margin: 10% 20% 0;
-  padding: 8px 12%;
+  margin: 7% 0 0 20%;
+  padding: 8px 8%;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
   background-color: darkkhaki;
@@ -110,7 +111,7 @@ input.weight {
 }
 
 #sbform {
-  width: 103%;
+  width: 60vw;
 }
 
 .precision {
@@ -131,5 +132,100 @@ input.weight {
   color: #000;
 }
 
+@media screen and (max-width: 768px) {
+  #sbform {
+  width: 80vw;
+}
 
+.balance {
+margin: 7% 0 0 30%;
+}
 
+#rgtweight,
+#lftweight {
+  width: 155px;
+}
+
+.title {
+  font-size: 15vh;
+  position: absolute;
+  top: 47%;
+  line-height: 80%;
+}
+}
+
+@media screen and (max-width: 425px) {
+.balance {
+margin: 7% 0 0 35%;
+}
+
+ #sbform {
+  width: 90vw;
+}
+
+#rgtweight,
+#lftweight {
+  width: 100px;
+}
+
+.weightsE {
+  width: 24vw;
+}
+
+h3 {
+  width: 85vw;
+}
+
+.title {
+  font-size: 10vh;
+}
+}
+
+@media screen and (max-width: 375px) {
+.balance {
+margin: 7% 0 0 35%;
+}
+
+ #sbform {
+  width: 92vw;
+}
+
+#rgtweight,
+#lftweight {
+  width: 79px;
+}
+
+.weightsE {
+  width: 98%;
+}
+
+input.weight {
+  width: 105px;
+}
+
+h3 {
+  width: 90vw;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+#array-of-weights {
+  width: 97vw;
+  padding-right: 15px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .weightsE {
+  width: 80%;
+}
+
+input.weight {
+  width: 90px;
+}
+
+#rgtweight,
+#lftweight {
+  width: 54px;
+}
+}
