@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid blue; */
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   height: 100vh;
   font-family: sans-serif;
   font-family: 'Shadows Into Light', cursive;
-  /* border: 1px solid red; */
   overflow: hidden;
 }
 
