@@ -34,12 +34,11 @@ h3 {
 .title {
   font-family: 'Shadows Into Light', cursive;
   color: #fceb0031;
-  font-size: 25vh;
+  font-size: 30vh;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  padding-top: 32%;
-  align-items: center;
+  padding: 5%;
+  line-height: 15rem;
+  margin-left: 20%;
 }
 
 #array-of-weights {
@@ -49,10 +48,10 @@ h3 {
   flex-direction: column;
   row-gap: 10px;
   align-items: flex-start;
-   padding: 15px 15px 30px;
-   width: 41%;
-   border-bottom-right-radius: 40px;
-   border-bottom-left-radius: 40px;
+  padding: 15px 15px 30px;
+  width: 41%;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 .div-weights-text {
@@ -60,6 +59,10 @@ h3 {
   width: 103%;
   display: flex;
   gap: 5px;
+}
+
+.weightsE {
+  display: flex;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -77,21 +80,32 @@ input[type=number] {
 input.weight {
   width: 163px;
   height: 30px;
-  padding: 15x 20px;
-
+  padding: 15px 20px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   border-radius: 4px;
-  background-color: rgb(136, 134, 91);
+  background-color: #fff;
+}
+
+input#lftweight::placeholder {
+  color: #cfcbcb;
+}
+
+input#rgtweight::placeholder {
+  color: #cfcbcb;
+}
+
+input.weight::placeholder {
+  color: #cfcbcb;
 }
 
 #rgtweight,
 #lftweight {
-  width: 162.7px;
-  padding: 5px;
+  width: 200px;
+  padding: 10px 20px;
   margin-top: 5%;
   border-radius: 4px;
-  background-color: rgb(136, 134, 91);
+  background-color: #fff;
   color: #000;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
@@ -103,7 +117,7 @@ input.weight {
   padding: 8px 8%;
   font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
-  background-color: darkkhaki;
+  background-color: rgb(214, 213, 203);
   letter-spacing: 2.5px;
   font-size: 18px;
 }
@@ -115,6 +129,13 @@ input.weight {
 .precision {
   margin: 10% 0 5px 0;
   width: 100%;
+}
+
+.rightinput,
+.left-input,
+.result span,
+.precision span {
+  font-size: 1.25rem;
 }
 
 .result {
