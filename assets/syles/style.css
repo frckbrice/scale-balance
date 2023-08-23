@@ -61,7 +61,7 @@ h3 {
   gap: 5px;
 }
 
-.weightsE {
+.weightse {
   display: flex;
 }
 
@@ -154,97 +154,97 @@ input.weight::placeholder {
 @media screen and (max-width: 768px) {
   #sbform {
   width: 80vw;
-}
+  }
 
-.balance {
-margin: 7% 0 0 30%;
-}
+  .balance {
+    margin: 7% 0 0 30%;
+  }
 
-#rgtweight,
-#lftweight {
-  width: 155px;
-}
+  #rgtweight,
+  #lftweight {
+    width: 155px;
+  }
 
-.title {
-  font-size: 15vh;
-  position: absolute;
-  top: 47%;
-  line-height: 80%;
-}
+  .title {
+    font-size: 15vh;
+    position: absolute;
+    top: 47%;
+    line-height: 80%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-.balance {
-margin: 7% 0 0 35%;
-}
+  .balance {
+    margin: 7% 0 0 35%;
+  }
 
- #sbform {
-  width: 90vw;
-}
+  #sbform {
+    width: 90vw;
+  }
 
-#rgtweight,
-#lftweight {
-  width: 100px;
-}
+  #rgtweight,
+  #lftweight {
+    width: 100px;
+  }
 
-.weightsE {
-  width: 24vw;
-}
+  .weightse {
+    width: 24vw;
+  }
 
-h3 {
-  width: 85vw;
-}
+  h3 {
+    width: 85vw;
+  }
 
-.title {
-  font-size: 10vh;
-}
+  .title {
+    font-size: 10vh;
+  }
 }
 
 @media screen and (max-width: 375px) {
-.balance {
-margin: 7% 0 0 35%;
-}
+  .balance {
+    margin: 7% 0 0 35%;
+  }
 
- #sbform {
-  width: 92vw;
-}
+  #sbform {
+    width: 92vw;
+  }
 
-#rgtweight,
-#lftweight {
-  width: 79px;
-}
+  #rgtweight,
+  #lftweight {
+    width: 79px;
+  }
 
-.weightsE {
-  width: 98%;
-}
+  .weightse {
+    width: 98%;
+  }
 
-input.weight {
-  width: 105px;
-}
+  input.weight {
+    width: 105px;
+  }
 
-h3 {
-  width: 90vw;
-  margin-right: 20px;
-  font-size: 15px;
-}
+  h3 {
+    width: 90vw;
+    margin-right: 20px;
+    font-size: 15px;
+  }
 
-#array-of-weights {
+  #array-of-weights {
   width: 97vw;
-  padding-right: 15px;
-}
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .weightsE {
-  width: 80%;
-}
+  .weightse {
+    width: 80%;
+  }
 
-input.weight {
-  width: 90px;
-}
+  input.weight {
+    width: 90px;
+  }
 
-#rgtweight,
-#lftweight {
-  width: 54px;
-}
+  #rgtweight,
+  #lftweight {
+    width: 54px;
+  }
 }
