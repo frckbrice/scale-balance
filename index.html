@@ -5,63 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
     <title>Scale-balance</title>
-    <script src="./assets/javascript/index.js" defer></script>
+   
     <link rel="stylesheet" href="./assets/syles/style.css" />
   </head>
   <body>
     <div class="container position">
-      <!-- <div id="div1"> -->
+      <h1 class="title">SCALE BALANCE</h1>
       <div id="array-of-weights">
-       <h3>Enter the weights in the fields bellow as needed. </h3> 
+       <h3>Create your list of weights here below</h3> 
           <div class="div-weights-text">
-            
-           <div class="weightsE">
-            <input type="number" name="array[]" value="12" class="weight" /><br>
-        <input type="number" name="array[]" value="12" class="weight"/><br>
-        <input type="number" name="array[]" value="1" class="weight"/><br>
-        <input type="number" name="array[]" value="3" class="weight"/><br>
-       <input type="number" name="array[]" value="4" class="weight"/><br>
-           </div>
-           <div class="weightsE">
-            <input type="number" name="array[]" value="4" class="weight"/><br>
-        <input type="number" name="array[]" value="6" class="weight"/><br>
-        <input type="number" name="array[]" value="4" class="weight"/><br>
-        <input type="number" name="array[]" value="7" class="weight"/><br>
-        <input type="number" name="array[]" value="13" class="weight"/><br>
-           </div>
-           <div class="weightsE">
-            <input type="number" name="array[]" value="14" class="weight"/><br>
-        <input type="number" name="array[]" value="36" class="weight"/><br>
-        <input type="number" name="array[]" value="45" class="weight"/><br>
-        <input type="number" name="array[]" value="63" class="weight"/><br>
-        <input type="number" name="array[]" value="21" class="weight"/><br>
+           <div class="weightse">
+            <input type="number" name="array[]" value="" class="weight" placeholder="weight 1" style="color:black"/><br>
+        <input placeholder="weight 2" type="number" name="array[]" value="" class="weight"/><br>
+        <input type="number" name="array[]" value="" class="weight" placeholder="weight 3"/><br>
+        <input type="number" name="array[]" value="" class="weight" placeholder="weight 4"/><br>
+       <input type="number" name="array[]" value="" class="weight" placeholder="weight 5"/><br>
+       <input type="number" name="array[]" value="" class="weight" placeholder="weight 6"/><br>
            </div>
           </div>
-          
-       
-        <!-- <div id="divform"> -->
-          <form id="sbform" name="sbform">
+          <div id="sbform" name="sbform">
             <label for="left-input">left weight : </label>
-            <input type="number" name="leftWeight" id="lftweight" />
+            <input type="number" name="leftWeight" id="lftweight" placeholder="left weight"/>
             <label for="rightinput">right weight : </label>
-            <input type="number" name="rightWeight" id="rgtweight" /><br />
-            <p class="precision">precision : <label class="resultat1">la precision apparaitra ici</label></p>
-            <p class="result">the result is : <label class="resultat">le rultat apparaitra ici</label></p>
+            <input type="number" name="rightWeight" id="rgtweight" placeholder="right weight" /><br />
+            <p class="precision"><span>precision :</span>  <label class="precise"></label></p>
+            <p class="result"> <span>the result is :</span> <label class="resultat"></label></p>
             <input
               type="button"
               value="Balance"
               class="balance"
            />
-          </form> 
-         
-          
-       
-        <!-- </div> -->
-       
+          </div> 
       </div>
     </div>
+     <script src="./assets/script/scalebalancing.js"></script>
   </body>
 </html>

@@ -2,21 +2,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid blue;
 }
 
 body {
-  width: 1440px;
+  width: 100%;
   height: 100vh;
   font-family: sans-serif;
-  font-family: 'Shadows Into Light', cursive;
-  border: 1px solid red;
+  font-family: "Shadows Into Light", cursive;
+  overflow: hidden;
 }
 
 .container {
-  background: linear-gradient(rgba(0 0 0 / 40%), rgba(0 0 0 / 40%)),
+  background:
+    linear-gradient(rgba(0 0 0 / 40%), rgba(0 0 0 / 40%)),
     url("../images/scblack.jpg");
-
   width: 100%;
   height: 100%;
   background-position: center;
@@ -28,21 +27,31 @@ body {
   padding-left: 1.5%;
 }
 
+h3 {
+  width: 60vw;
+}
+
+.title {
+  font-family: "Shadows Into Light", cursive;
+  color: #fceb0031;
+  font-size: 30vh;
+  font-weight: bold;
+  padding: 5%;
+  line-height: 15rem;
+  margin-left: 20%;
+}
+
 #array-of-weights {
   position: absolute;
   top: 10%;
   display: flex;
   flex-direction: column;
-
-
   row-gap: 10px;
   align-items: flex-start;
-   background: linear-gradient(rgba(0 0 0  / 60%),rgba(0 0 0  / 70%), rgba(0 0 0  / 50%),rgba(0 0 0  / 70%),rgb(156, 139, 98)) ;
-   padding: 15px 15px 30px;
-
-   width: 37.5%;
-   border-bottom-right-radius: 40px;
-   border-bottom-left-radius: 40px;
+  padding: 15px 15px 30px;
+  width: 41%;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 .div-weights-text {
@@ -52,60 +61,74 @@ body {
   gap: 5px;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.weightse {
+  display: flex;
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearanonce: textfield;
 }
 
 input.weight {
   width: 163px;
   height: 30px;
-  padding: 15x 20px;
-
-  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 20px;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   border-radius: 4px;
-  background-color: rgb(136, 134, 91);
+  background-color: #fff;
+}
+
+input#lftweight::placeholder {
+  color: #cfcbcb;
+}
+
+input#rgtweight::placeholder {
+  color: #cfcbcb;
+}
+
+input.weight::placeholder {
+  color: #cfcbcb;
 }
 
 #rgtweight,
 #lftweight {
-  width: 162.7px;
-  padding: 5px;
+  width: 200px;
+  padding: 10px 20px;
   margin-top: 5%;
   border-radius: 4px;
-  background-color: rgb(136, 134, 91);
+  background-color: #fff;
   color: #000;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
 }
 
 .balance {
   border-radius: 5px;
-  margin: 10% 30% 0;
-  padding: 8px 12%;
-  font-family: 'Shadows Into Light', cursive;
-  
+  margin: 7% 0 0 20%;
+  padding: 8px 8%;
+  font-family: "Shadows Into Light", cursive;
   font-weight: bold;
-  background-color: darkkhaki;
+  background-color: rgb(214 213 203);
   letter-spacing: 2.5px;
   font-size: 18px;
 }
 
 #sbform {
-  width: 103%;
+  width: 60vw;
 }
 
 .precision {
-  margin: 10% 0 5px 0;
+  margin: 10% 0 5px;
   width: 100%;
+}
+
+.rightinput,
+.left-input,
+.result span,
+.precision span {
+  font-size: 1.25rem;
 }
 
 .result {
@@ -121,5 +144,100 @@ input.weight {
   color: #000;
 }
 
+@media screen and (max-width: 768px) {
+  #sbform {
+    width: 80vw;
+  }
 
+  .balance {
+    margin: 7% 0 0 30%;
+  }
 
+  #rgtweight,
+  #lftweight {
+    width: 155px;
+  }
+
+  .title {
+    font-size: 15vh;
+    position: absolute;
+    top: 47%;
+    line-height: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .balance {
+    margin: 7% 0 0 35%;
+  }
+
+  #sbform {
+    width: 90vw;
+  }
+
+  #rgtweight,
+  #lftweight {
+    width: 100px;
+  }
+
+  .weightse {
+    width: 24vw;
+  }
+
+  h3 {
+    width: 85vw;
+  }
+
+  .title {
+    font-size: 10vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .balance {
+    margin: 7% 0 0 35%;
+  }
+
+  #sbform {
+    width: 92vw;
+  }
+
+  #rgtweight,
+  #lftweight {
+    width: 79px;
+  }
+
+  .weightse {
+    width: 98%;
+  }
+
+  input.weight {
+    width: 105px;
+  }
+
+  h3 {
+    width: 90vw;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  #array-of-weights {
+    width: 97vw;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .weightse {
+    width: 80%;
+  }
+
+  input.weight {
+    width: 90px;
+  }
+
+  #rgtweight,
+  #lftweight {
+    width: 54px;
+  }
+}
